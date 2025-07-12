@@ -121,3 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 // this is the sample code
+// This is a sample Flutter application that demonstrates the use of stateful widgets, theming, and basic UI components.
+// It includes a counter that increments when a button is pressed, showcasing the use of setState to update the UI.
+// The app is structured with a main function that runs the MyApp widget, which sets up the MaterialApp and its theme.
+// The MyHomePage widget displays the current count and provides a button to increment it, illustrating
