@@ -4,15 +4,24 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
   const CurrencyConverterMaterialPage({super.key});
   @override
   Widget build(BuildContext context){
-    return Scaffold(
+    return const Scaffold(
+      backgroundColor: Colors.blueAccent,
           body: Center(
-            child: Column(
-              children: [
-                Text("0")
-              ],
-            ),
-          ),
+            child:Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                Text("0" , 
+                style: TextStyle(
+                  fontSize: 50,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              TextField()
+            ], // children
+          ), 
         ),
+    );
   }
 
 }
