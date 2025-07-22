@@ -9,7 +9,7 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
           body: Center(
             child:Column(
               mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
+                children: [
                 Text("0" , 
                 style: TextStyle(
                   fontSize: 50,
@@ -17,10 +17,18 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              TextField()
-            ], // children
-          ), 
-        ),
+              TextField(
+                decoration: InputDecoration(
+                  hintText: "Please enter amount in USD",
+                  hintStyle: TextStyle(
+                    color: Colors.white54
+                  ),
+                  prefix: Icon(Icons.monetization_on),
+                 ),
+               ),
+              ], // children
+            ), 
+          ),
     );
   }
 
