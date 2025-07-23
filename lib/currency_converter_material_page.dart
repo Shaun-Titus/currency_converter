@@ -19,6 +19,13 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
               ),
               TextField(
                 decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderSide: BorderSide(
+                      color: Colors.white,
+                      width: 2, // Adjust the width of the border
+                    ),
+                  ),
                   hintText: "Please enter amount in USD",
                   hintStyle: TextStyle(
                     color: Colors.black,
@@ -30,7 +37,6 @@ class CurrencyConverterMaterialPage extends StatelessWidget {
                   focusedBorder: OutlineInputBorder(
                     borderSide: BorderSide(
                       color: Colors.white,
-                      width: 2.0,
                     ),
                   ),
                  ),
