@@ -20,6 +20,11 @@ class _CurrencyConverterMaterialPageState
                         result = double.parse(textEditingController.text)*86.69;
                       });           
                   }
+  @override
+  void dispose() {
+    textEditingController.dispose();
+    super.dispose();
+  }
 
      @override
      Widget build(BuildContext context){
